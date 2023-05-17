@@ -9,21 +9,31 @@
     android:background="@color/blue">
 
     <TextView
+        android:id="@+id/tv_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app"
+        android:textColor="@color/bluebold"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        ></TextView>
+
+    <TextView
         android:id="@+id/tv_contacts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/contacts"
         android:textColor="@color/black"
-        android:layout_above="@+id/LayoutDangNhap"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:padding="10dp"
         android:textStyle="bold"
         android:textSize="25sp"
-
-
         ></TextView>
-    <EditText
+   <!-- <EditText
         android:id="@+id/edt_name"
         android:hint="Name"
         android:textColor="@color/black"
@@ -37,19 +47,10 @@
         android:hint="Phone number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"/>
-    <Button
-        android:onClick="addContact"
-        android:id="@+id/btn_addcontact"
-        android:text="@string/addcontact"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        ></Button>
+        android:layout_marginBottom="16dp"/>-->
     <ListView
         android:id="@+id/lv_contact"
+        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </ListView>
