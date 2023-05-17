@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Contacts</string>
+    <string name="addcontact">Thêm liên lạc</string>
+    <string name="contacts">DANH BẠ</string>
 </resources>
