@@ -1,4 +1,4 @@
-package com.camoi.contacts;
+package com.camoi.contacts.data;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -7,15 +7,16 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
-import androidx.core.database.sqlite.SQLiteDatabaseKt;
+
+import com.camoi.contacts.ContactModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class DataBaseHelper extends SQLiteOpenHelper {
 
-     public static final String CONTACT_TABLE = "contacts";
-    public static final String COLUMN_ID = "ID";
+    public static final String CONTACT_TABLE = "contacts";
+    public static final String COLUMN_ID = "id";
     public static final String COLUMN_CONTACT_NAME = "name";
     public static final String COLUMN_CONTACT_PHONE = "phone";
 
@@ -103,5 +104,4 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         return returnList;
     }
 }
-
 
